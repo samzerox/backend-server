@@ -18,7 +18,11 @@ app.get('/:tipo/:img', (req, res, next) => {
             path = './assets/no-img.jpg'
         }
 
-        res.sendfile(path);
+        // Esta linea se uso en clase pero esta obsoleta
+        // res.sendfile(path);
+
+        // Esta es la linea correcta pero no se si funcione despues Y en todos lados
+        res.sendFile(path, { root: 'C:/Users/Sam/Desktop/angular adv/backend-server/' });
 
     });
 
