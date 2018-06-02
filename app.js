@@ -55,7 +55,7 @@ app.use('/', appRoutes);
 
 
 // Escuchar peticiones
-var port = process.env.PORT || 3001;
+var port = process.env.PORT || 3000;
 app.listen(port, () => {
     console.log('Express server puerto ' + port + ': \x1b[32m%s\x1b[0m', 'online');
 
